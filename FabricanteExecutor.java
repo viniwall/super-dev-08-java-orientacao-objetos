@@ -1,7 +1,5 @@
 import javax.swing.JOptionPane;
-
 public class FabricanteExecutor {
-
     public void executar() {
         Fabricante renaux = new Fabricante();
         renaux.razaoSocial = "renaux Linhas e Fios";
@@ -9,14 +7,12 @@ public class FabricanteExecutor {
         renaux.faturamento = 3_000_000.00;
         renaux.percentualLucro = 25;
         renaux.lucroFinal = calcularLucroFinal(renaux);
-
         Fabricante havan = new Fabricante();
         havan.razaoSocial = "Havan";
         havan.CNPJ = "123.456/7891-112";
         havan.faturamento = 289_000_000;
         havan.percentualLucro = 35;
         havan.lucroFinal = calcularLucroFinal(havan);
-
         JOptionPane.showMessageDialog(null, 
             "==Empresa 1==" +
             "\nRazão Social: " + renaux.razaoSocial + 
@@ -24,7 +20,6 @@ public class FabricanteExecutor {
             "\nFaturamento: " + renaux.faturamento + 
             "\nPercentual de Lucro: " + renaux.percentualLucro + 
             "\nLucro Final: " + renaux.lucroFinal + "\n\n" + 
-
             "==Empresa 2==" +
             "\nRazão Social: " + havan.razaoSocial + 
             "\nCNPJ: " + havan.CNPJ + 
@@ -33,10 +28,8 @@ public class FabricanteExecutor {
             "\nLucro Final: " + havan.lucroFinal
         );
     }
-
     private double calcularLucroFinal(Fabricante fabricante) {
         double lucroFinal =  (fabricante.percentualLucro/100)* fabricante.faturamento;
         return lucroFinal;
     }
-
 }
