@@ -2,10 +2,8 @@ import javax.swing.JOptionPane;
 
 public class JogoExecutor {
     public void executar() {
-        // Classe nomeObjeto = new Classe();
-        // Instanciando (criar) um objeto da classe Jogo
         Jogo counterStrike2 = new Jogo();
-        // Definindo valor para o atributo nome
+        
         counterStrike2.nome = "CS2";
         counterStrike2.preco = 0;
         counterStrike2.parcelamentoDisponivel = 0;
@@ -48,19 +46,3 @@ public class JogoExecutor {
         return valorParcela;
     }
 }
-
-// Criar uma classe chamada Fabricante
-// Com os seguintes atributos
-// Nome
-// CNPJ (String)
-// Faturamento
-// Percentual de Lucro (int)
-// Criar a classe FabricanteExecutor
-//  Criar a função executar
-//  Instanciar um objeto de alguma fábrica de SC
-//  Definir valor para os atributos deste objeto da fabricante
-//  Apresentar os dados do fabricante
-
-//  Instanciar um objeto de alguma fábrica de RS
-//  Definir valor para os atributos deste objeto da fabricante
-//  Apresentar os dados do fabricante
